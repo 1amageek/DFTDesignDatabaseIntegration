@@ -44,3 +44,6 @@ diff checks the consumed API boundary. Xcircuite's dedicated host build compiles
 both integration products against the exact closure and focused STA host tests
 verify composition. Existing DFT schema/runtime behavior tests retain ownership
 of the unchanged DFT state and publication contracts.
+
+The exact DFTEngine dependency is `b3a76a8ebd5aa17b5a03ceaa3c30dde704e3da1e`; that adoption
+changes its TimingEngine identity only, with no DFT source/API change.
