@@ -21,7 +21,7 @@ let package = Package(
         .package(url: "https://github.com/1amageek/DFTEngine.git", revision: "b3a76a8ebd5aa17b5a03ceaa3c30dde704e3da1e"),
         .package(url: "https://github.com/1amageek/LogicDesignDatabaseIntegration.git", exact: "26.812.0"),
         .package(url: "https://github.com/1amageek/StandardCellLibraryDesignDatabaseIntegration.git", revision: "8efd484f3d013a53d5597492c82a9fb97daa10f2"),
-        .package(url: "https://github.com/1amageek/TimingDesignDatabaseIntegration.git", revision: "697acf125836520f00f1379d04dc4a7521e1d1b4"),
+        .package(url: "https://github.com/1amageek/TimingDesignDatabaseIntegration.git", revision: "a5665e7390a09a58738928ffd049e9adc124e061"),
         .package(url: "https://github.com/1amageek/database-kit.git", exact: "26.0809.4"),
         .package(url: "https://github.com/1amageek/database-types.git", exact: "26.0730.0"),
         .package(
