@@ -30,20 +30,18 @@ DFTCore + exact facet bindings -> DFTDesignDatabaseSchema
 
 ## Contracts and Invariants
 
-All source bindings retain one exact base revision and their exact facet roots.
-Adopt TimingDesignDatabaseIntegration
-`697acf125836520f00f1379d04dc4a7521e1d1b4` so the host can compose the same exact
-TimingEngine revision. The adopted timing integration leaves its schema and
-runtime-adapter source/API unchanged from `bd11c27`; this adoption changes no DFT
-source, state schema, public API or timing binding semantics.
+Source bindings retain one exact base revision and exact facet roots.
+[Package.swift](Package.swift) is the authority for the exact dependency closure
+shared with Xcircuite. Adopted TimingEngine contracts include
+[TimingCore strict source characterization](../TimingEngine/Sources/TimingCore/DESIGN.md).
+Domain semantics remain owned by those dependencies; this package preserves its
+schema and runtime-adapter source bytes without asserting that transitive
+dependency source or behavior is unchanged.
 
 ## Verification and Change Impact
 
-Manifest decoding checks the exact adoption, and the unchanged dependency source
-diff checks the consumed API boundary. Xcircuite's dedicated host build compiles
-both integration products against the exact closure and focused STA host tests
-verify composition. Existing DFT schema/runtime behavior tests retain ownership
-of the unchanged DFT state and publication contracts.
-
-The exact DFTEngine dependency is `b3a76a8ebd5aa17b5a03ceaa3c30dde704e3da1e`; that adoption
-changes its TimingEngine identity only, with no DFT source/API change.
+Manifest inspection checks every exact requirement before host resolution.
+Xcircuite compiles and exercises the consumed products against that closure.
+Existing schema/runtime behavioral tests own state admission and publication;
+dependency source-contract changes require the corresponding composing host
+verification and remain distinct from process qualification.
