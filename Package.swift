@@ -18,10 +18,10 @@ let package = Package(
     dependencies: [
         releasedDependency(named: "CircuiteFoundation", exactVersion: "26.812.0"),
         releasedDependency(named: "DesignDatabase", exactVersion: "26.812.1"),
-        .package(url: "https://github.com/1amageek/DFTEngine.git", revision: "83c32c0428e562c7435116962ef58b8d4287df19"),
+        .package(url: "https://github.com/1amageek/DFTEngine.git", revision: "58b8cf6b7bfa3a02b19b1c8a140d2cee5673a5af"),
         .package(url: "https://github.com/1amageek/LogicDesignDatabaseIntegration.git", exact: "26.812.0"),
         .package(url: "https://github.com/1amageek/StandardCellLibraryDesignDatabaseIntegration.git", revision: "f4a36d5e2144c7266181bdb78abd9b4df0d0058f"),
-        .package(url: "https://github.com/1amageek/TimingDesignDatabaseIntegration.git", revision: "64437e8f4b75d6dbae939a540c774206a66e5410"),
+        .package(url: "https://github.com/1amageek/TimingDesignDatabaseIntegration.git", revision: "f8536c2e39e2925e6224dc07224305e325e82c8c"),
         .package(url: "https://github.com/1amageek/database-kit.git", exact: "26.0809.4"),
         .package(url: "https://github.com/1amageek/database-types.git", exact: "26.0730.0"),
         .package(
