@@ -45,3 +45,16 @@ Xcircuite compiles and exercises the consumed products against that closure.
 Existing schema/runtime behavioral tests own state admission and publication;
 dependency source-contract changes require the corresponding composing host
 verification and remain distinct from process qualification.
+
+## Exact PDK Identity Dependency Adoption
+
+[Package.swift](Package.swift) owns the exact revisions consumed by this package.
+This adoption consumes the updated PDKCore product directly or transitively.
+[Checked PDK identity values](../PDKKit/Sources/PDKCore/Identity/DESIGN.md)
+and their immutable schema-2 representation remain owned by the lower contract.
+Manifest discovery/exact loading remains owned by
+[PDKDiscovery](../PDKKit/Sources/PDKDiscovery/ManifestLoading/DESIGN.md).
+Transitive revisions must agree with the composing Xcircuite graph without overrides.
+This dependency change preserves this package's domain implementation; lower
+behavioral evidence and host identity/provenance tests establish the consumed
+contract, not process qualification or unexecuted domain test coverage.
