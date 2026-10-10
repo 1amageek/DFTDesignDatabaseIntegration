@@ -10,7 +10,7 @@ func releasedDependency(named name: String, exactVersion: Version) -> Package.De
 
 let package = Package(
     name: "DFTDesignDatabaseIntegration",
-    platforms: [.macOS(.v26)],
+    platforms: [.macOS("27.0")],
     products: [
         .library(name: "DFTDesignDatabaseSchema", targets: ["DFTDesignDatabaseSchema"]),
         .library(name: "DFTDesignDatabaseRuntimeAdapter", targets: ["DFTDesignDatabaseRuntimeAdapter"]),
@@ -18,10 +18,10 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/1amageek/CircuiteFoundation.git", revision: "ae88104c556f5802819713ed741f5b2fffffc2d9"),
         .package(url: "https://github.com/1amageek/DesignDatabase.git", revision: "11df4ff7d905d642b5935defb3bc1fbcfefda038"),
-        .package(url: "https://github.com/1amageek/DFTEngine.git", revision: "c0847f305393fd133e4103cf2c2d6333fee40c1f"),
+        .package(url: "https://github.com/1amageek/DFTEngine.git", revision: "4c6cf95e6f58e217b87da6d3dbe42ddf2df408d8"),
         .package(url: "https://github.com/1amageek/LogicDesignDatabaseIntegration.git", revision: "20077f5a8a11b026289e0e4b4588e7afcd883fa6"),
-        .package(url: "https://github.com/1amageek/StandardCellLibraryDesignDatabaseIntegration.git", revision: "15553545df8a2373a0c4199861d620d807c6a988"),
-        .package(url: "https://github.com/1amageek/TimingDesignDatabaseIntegration.git", revision: "5575704acb24e9ae64602351e07dae4389d621f5"),
+        .package(url: "https://github.com/1amageek/StandardCellLibraryDesignDatabaseIntegration.git", revision: "70a1f3473ee577e2f1479e7d4d33c1730f66c3c3"),
+        .package(url: "https://github.com/1amageek/TimingDesignDatabaseIntegration.git", revision: "a5efd571c2627ba6869f90e0cbe5c7d6095fe3ef"),
         .package(url: "https://github.com/1amageek/database-kit.git", exact: "26.0809.4"),
         .package(url: "https://github.com/1amageek/database-types.git", exact: "26.0730.0"),
         .package(

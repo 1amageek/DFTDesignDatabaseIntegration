@@ -40,6 +40,8 @@ dependency source or behavior is unchanged.
 
 ## Verification and Change Impact
 
+The package manifest consumes the [CoreSpice host deployment contract](../CoreSpice/DESIGN.md#responsibilities-and-boundaries) through its exact dependency closure. Changes to that contract require resolution and affected host-product verification.
+
 Manifest inspection checks every exact requirement before host resolution.
 Xcircuite compiles and exercises the consumed products against that closure.
 Existing schema/runtime behavioral tests own state admission and publication;
